@@ -162,9 +162,9 @@ class Tic_Tac_Toe():
 
     def is_gameover(self):
         # Either someone wins or all grid occupied
-        self.X_wins = self.is_winner('X')
+        self.X_wins = self.is_win('X')
         if not self.X_wins:
-            self.O_wins = self.is_winner('O')
+            self.O_wins = self.is_win('O')
 
         if not self.O_wins:
             self.tie = self.is_tie()
